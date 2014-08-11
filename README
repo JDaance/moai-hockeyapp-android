@@ -1,0 +1,14 @@
+I implemented the stuff in this guide: http://support.hockeyapp.net/kb/client-integration-android-other-platforms/hockeyapp-for-android-ndk-early-access
+
+Its a plugin for MOAI according to the structure for plugins set up by Halfnelson.
+
+There are two java files that you need to manually add to your java host, one is original hockey app code, and the other is my little wrapper.
+
+Use the wrapper by calling from your activity
+  handler = new HockeyAppHandler(this); 
+  handler.init();
+  handler.checkForCrashes();
+
+The java stuff in HockeyAppHandler is very crude so you need to look at it and modify according to your needs
+
+Read up on using plugins somewhere else, I'm in a hurry :)
