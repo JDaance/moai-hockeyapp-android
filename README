@@ -4,7 +4,9 @@ Its a plugin for MOAI according to the structure for plugins set up by Halfnelso
 
 There are two java files that you need to manually add to your java host, one is original hockey app code, and the other is my little wrapper.
 
-Use the wrapper by calling from your activity
+Change the hockey app ID in HockeyAppHandler.java to match your account
+
+Then use the wrapper by calling from your activity
   handler = new HockeyAppHandler(this); 
   handler.init();
   handler.checkForCrashes();
