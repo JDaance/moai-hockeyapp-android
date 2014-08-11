@@ -2,7 +2,7 @@ I implemented the stuff in this guide: http://support.hockeyapp.net/kb/client-in
 
 Its a plugin for MOAI according to the structure for plugins set up by Halfnelson.
 
-There are two java files that you need to manually add to your java host, one is original hockey app code, and the other is my little wrapper.
+There are two java files in java_host_files that you need to manually add to your java host, one is original hockey app code (net package folder), and the other is my little wrapper HockeyAppHandler.
 
 Change the hockey app ID in HockeyAppHandler.java to match your account
 
