@@ -13,8 +13,9 @@ void MOAIHockeyAppAndroidAppFinalize () {
 }
 
 //----------------------------------------------------------------//
-static bool hockeyImpossibleCondition = false;
+static bool hockeyImpossibleCondition = rand() < 0;
 void MOAIHockeyAppAndroidAppInitialize () {
+	// trick compiler/linker to include function
 	if (hockeyImpossibleCondition) {
 		Java_se_skyturns_HockeyAppHandler_setUpNative(NULL, NULL, NULL);
 	}
